@@ -1,0 +1,283 @@
+ /*Configuracion inicial de la página*/
+/*Resetendo el layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ /* background: #fff;*/
+}
+
+/*Clases reutilizables*/
+/*.row{
+  margin:0;
+}*/
+
+
+.bg-white{
+  background: #fff;
+}
+.bg-color{
+  background:#f7b617;
+}
+
+
+
+.text-white{
+  color:white;
+}
+/*Flexbox para la barra de navegación*/
+.navbar-flex {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  
+}
+
+.navbar-brand img{
+  height:100%;
+}
+
+
+
+.start{ 
+  align-items: center;
+  background-attachment:fixed;
+  background-image: url('../assets/images/taxi.jpg');/*modificar para desktop*/
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  display: flex;
+  justify-content:flex-end;
+  height:100vh;
+  width:100%;
+}
+
+.floating{
+  height:33.33vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items:flex-start;
+}
+
+
+
+
+.floating img{
+display: inline-block;
+height:4vh;
+width:13vw;
+transform:translateY(-25%)
+}
+
+.floating h3{
+  display: inline-block;
+  font-weight:bold;
+}
+
+
+.new-app {
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+border:solid 1px white;
+margin:5vh 0;
+
+}
+
+.new-app img{
+  width:50vw;
+  margin-bottom:5vh;
+}
+
+.driver{ 
+  align-items: center;
+  background-attachment:fixed;
+  background-image: url('../assets/images/conduce.jpg');/*modificar para desktop*/
+  background-size:cover;
+  background-repeat:no-repeat;
+  display: flex;
+  justify-content:flex-start;
+  height:75vh;
+  width:100%;
+}
+
+.floating-transparent{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items:flex-start;
+  
+}
+
+/*Modificando los estilos de los inputs*/
+.form{
+  padding:5vh 5vw;
+}
+input{
+  border: 1px solid #fff;
+  font-size:5em;
+}
+input[type=text]:focus {
+  border: 1px solid #fff;
+  outline:none;
+} 
+
+.form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+
+/* Estilos del mapa*/
+.maps{
+height:50vh;
+margin-top:10vh;
+}
+
+
+
+/*Estilos del footer*/
+.bg-footer {
+  padding-bottom:2vh;
+  padding-top:2vh;
+  background-color: rgb(24, 23, 23);
+}
+.list-unstyled li{
+  margin-bottom: 1em;
+}
+
+.logo-footer{
+  width:30vw;
+  height:10vh;
+  display:block;
+  margin-top:5vh;
+}
+/*Modal Login*/
+.bg-modal {
+  background-color: #0f9e97;
+}
+
+.mod-log-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fr-log-in {
+  background-color: #fff;
+  padding-top:2vh;
+}
+
+button.close {
+  align-self: flex-end;
+}
+
+/*Modal conviertete en conductor*/
+
+.bg-driver {
+  background-color: #a5a5a1;
+ }
+
+.btn-driver{
+  background-color: #42b2df;
+  width:100%;
+}
+
+.text-black{
+  color:#000;
+  font-weight:bold;
+}
+
+/*Modal registrate*/
+.btn-black{
+  background-color: #000;
+  width:63%;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .navbar-brand img{
+    margin-left:10vw;
+  }
+  .navbar-right{
+    margin-right:10vw;
+  }
+  .start h3{
+    margin-bottom:0;
+    margin-top:0;
+    }
+  
+  .floating{
+    height:45vh;
+    padding-top:4vh;
+    padding-bottom:4vh;
+    
+  }
+  
+  .floating img{
+    
+    height:3vh;
+    width:9vw;
+  }
+  .floating h4{
+    display: inline-block;
+    font-weight:bold;
+  }
+
+  .place::-webkit-input-placeholder { color: black !important; }  /* WebKit, Blink, Edge */ 
+  .place:-moz-placeholder { color: black !important; }  /* Mozilla Firefox 4 to 18 */
+  .place::-moz-placeholder { color: black !important; }  /* Mozilla Firefox 19+ */
+  .place:-ms-input-placeholder { color: black !important; }  /* Internet Explorer 10-11 */
+  .place::-ms-input-placeholder { color: black !important; }  /* Microsoft Edge */
+  
+  .driver{ 
+    align-items: flex-end;
+    display: flex;
+    flex-direction:column;  
+  }
+
+  .floating-transparent{
+    padding:7vh 3vh 4vh;
+    background-color: rgba(0, 12, 0, 0.5);
+    
+  }
+
+  .form{ 
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:flex-start;
+   
+  }
+
+  .maps{
+    width:25vw;
+    height:50vh;
+    align-self:flex-end;
+    margin-top:-40vh;
+    
+    }
+
+    .logo-footer{
+      width:15vw;
+      
+      display: block;
+      margin-left:15vw;
+      
+      
+    }
+
+  .group-logos{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    margin-left:35vw;
+    margin-top:-35vh;
+    
+   
+  }
+
+  
+  
+}

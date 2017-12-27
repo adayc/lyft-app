@@ -29,6 +29,7 @@
   background: #fff;
 }
 
+
 .space-between{
 display:flex;
 flex-direction:column;
@@ -39,6 +40,9 @@ justify-content:space-between;
   min-width:1rem;
 }
 
+.bg-purple{
+  background-color:#FF00BF;
+}
 /*Estilo del index*/
 .gradient{
   background: linear-gradient(#76278F, #FF00BF);

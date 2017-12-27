@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lyft</title>
+  <!-- Hojas de estilo para iconos -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="shortcut icon" href="../assets/icons/lyft-icon.png" type="image/x-icon">
+  <!-- Hojas de estilo de Bootstrap  -->
+  <link type="text/css" rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css" />
+  <!-- Fuentes externas  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Hojas de estilo personalizadas este proyecto  -->
+  <link href="../css/main.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+ 
+
+    <div class="row">
+        <div class="col-lg-6 cols-xs-12">
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button id="select-country" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/icons/pe.png" alt="Icono de Perú"><span class="caret"></span>
+              </button>
+             <ul id="country" class="dropdown-menu stretch">
+                
+                <li>
+                  <a href="#" data-value="USA">
+                    <img src="../assets/icons/us.png" alt="Icono de USA">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-value="MX">
+                    <img src="../assets/icons/mx.jpg" alt="Icono de México">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-value="CO">
+                    <img src="../assets/icons/co.png" alt="Icono de Colombia">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <input type="text" class="form-control" aria-label="...">
+          </div>
+        </div>
+
+      </div>
+      
+      
+    <ul id="sizelist">
+        <li><a href="#" data-value="S">S</a></li>
+        <li><a href="#" data-value="M">M</a></li>
+        <li><a href="#" data-value="L">L</a></li>
+        <li><a href="#" data-value="XL">XL</a></li>
+      </ul>
+      
+      <input id="sizevalue" size="15" name="size" type="text" />
+  
+      <!-- Js de Jquery-->
+    <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+    <!-- Js de bootstrap-->
+    <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Js para la página-->
+    <script type="text/javascript" src="../js/app2.js"></script>
+    <div class="row">
+        <div class="col-lg-6 cols-xs-12">
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button id="select-country" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
+                <span class="caret"></span>
+              </button>
+             <ul id="country" class="dropdown-menu stretch">
+                <li >
+                  <a href="#" data-value="+51">
+                    <img src="../assets/icons/pe.png" alt="Icono de Perú">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-value="+01">
+                    <img src="../assets/icons/us.png" alt="Icono de USA">
+                  </a>
+                </li>
+                <li >
+                  <a href="#" data-value="+51">
+                    <img src="../assets/icons/mx.jpg" alt="Icono de México">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-value="+51">
+                    <img src="../assets/icons/co.png" alt="Icono de Colombia">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <input class="form-control" type="text" placeholder="xx" readonly>
+             
+          
+            <input type="text" class="form-control" aria-label="...">
+          
+          </div>
+        </div>
+
+      </div>
+
+    <div class="row">
+        <div class="col-xs-12 text-center">
+          <h6>We'll send a text to verify your phone</h6>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

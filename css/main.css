@@ -35,6 +35,10 @@ flex-direction:column;
 justify-content:space-between;
 }
 
+.stretch{
+  min-width:1rem;
+}
+
 /*Estilo del index*/
 .gradient{
   background: linear-gradient(#76278F, #FF00BF);

@@ -47,20 +47,20 @@
                 <div class="input-group">
                     <span class="input-group-addon subir-capa" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
                     <div class="form-control">
-                      <input type="text" class="col-xs-6 outline" placeholder="Name">
-                      <input type="text" class="col-xs-6 outline" placeholder="Last name">
+                      <input id="txt-name" type="text" class="col-xs-6 outline" placeholder="Name">
+                      <input id="txt-last-name" type="text" class="col-xs-6 outline" placeholder="Last name">
                     </div>
                   </div>
                 <div class="input-group checkbox">
                     <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
                     <div class="form-control">
-                    <input type="text" class="col-xs-12 outline" placeholder="Email" aria-describedby="basic-addon1" id="input-correo">
+                    <input id="txt-email" type="text" class="col-xs-12 outline" placeholder="Email" aria-describedby="basic-addon1" id="input-correo">
                     </div>
                 </div>
                 
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox"> I agree to Lyft's <span><a href="#" class="blue">Terms of service </a></span>
+                    <input id="check-agree" type="checkbox"> I agree to Lyft's <span><a href="#" class="blue">Terms of service </a></span>
                   </label>
                 </div>
                 
@@ -70,7 +70,17 @@
         </div>
       </div>
       
-  
+  <!-- Advertencia de código  erróneo-->
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12  text-center">
+          <div id="danger" class="alert alert-danger alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Warning!</strong> El dato ingresado es incorrecto.
+          </div>
+        </div>
+      </div>
+    </div>
      
       <!-- Botón Next-->
       <div class="container">

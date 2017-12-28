@@ -1,50 +1,106 @@
 $(document).ready(function() {
   // Deshabilitamos el boton al cargar la página
   $('#btn-next').prop('disabled', true);
- 
-  
+  // Colocamos el cursor en el input de nombre
+  $('#txt-name').focus();
 
-  $('.input-group input').on('input', function() {
-    // Elaboramos una expresión regular para validar que se ingrese el código 
-    var REGEXONENUMBER = /^\d{1}$/;
-    // Validamos cada texto con la expresión regular
-    if (REGEXONENUMBER.test($('.input-group input').eq(0).val()) && REGEXONENUMBER.test($('.input-group input').eq(1).val()) && REGEXONENUMBER.test($('.input-group input').eq(2).val())) {
-      $('#btn-next').prop('disabled', false);
-    } else {
-      $('#btn-next').prop('disabled', true);
+  $('#danger').addClass('hidden');
+
+
+  var validateName = false; 
+  var validateLastName = false; 
+  var validateEmail = false;
+  
+  var validateChecked = false;  
+  var REGEXNAME = /^[A-Z a-záéíóúÁÉÍÓÚñÑ-]*$/;
+  var REGEXEMAIL = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
+
+  function desactiveButton() {
+    $('#btn-next').prop('disabled', true);
+    $('#danger').addClass('show');
+    $('#danger').removeClass('hidden');
+  } 
+
+  function activeButton() {
+    $('#btn-next').prop('disabled', false);
+    $('#danger').addClass('hidden');
+    $('#danger').removeClass('show')
+  } 
+
+
+  $('#txt-name').on('input', function() {
+    
+    if (REGEXNAME.test($(this).val())) {
+      
+      validateName = true;
+      $(this).removeClass('error');
+      activeButton();
+      
+    }else{
+      
+      validateName = false;
+      $(this).addClass('error');
+      desactiveButton();
+
     }
-    // En el caso que se reingrese el código se oculta la advertencia y aparece la info
-    $('#warning').addClass('hidden');
-    $('#warning').removeClass('show');
-    $('#info').addClass('show');
-    $('#info').removeClass('hidden');
   });
+
+  $('#txt-last-name').on('input', function() {
+    if (REGEXNAME.test($(this).val())) {
+      validateLastName = true;
+      $(this).removeClass('error');
+      activeButton();
+      
+    }else{
+      validateLastName = false;
+      $(this).addClass('error');
+      desactiveButton();
+    }
+  });
+
+  $('#txt-email').on('input', function() {
+    if (REGEXEMAIL.test($(this).val())) {
+      
+      validateEmail = true;
+      $(this).removeClass('error');
+      activeButton();
+    }else{
+      
+      validateEmail = false;
+      $(this).addClass('error');
+      desactiveButton();
+
+    }
+  });
+
+  $('#check-agree').on('click', function(event) {
+    if (event.target.checked) {
+     validateChecked = true;
+     $('#btn-next').prop('disabled', false);
+    } else {
+      validateChecked = false;
+      $('#btn-next').prop('disabled', true);
+      
+    }
+  });
+
+
+
+
 
   $('#btn-next').on('click', function() {
-    // Almacenamos el código generado en la variable codeRandom
-    var codeRandom = window.localStorage.getItem('numberRandom');
-    // Almacenamos el código ingresado en la variable codeEntered
-    var codeEntered = $('.input-group input').eq(0).val() + $('.input-group input').eq(1).val() + $('.input-group input').eq(2).val();
-    // Comparamos que el código ingresado con el código generado
-    if (codeEntered === codeRandom) {
-      // En el caso que sea verdadero nos dirigimos a login.html
-      window.location.href = 'register-email.html';
-      $('#info').addClass('show');
-      $('#info').removeClass('hidden');
-    } else {
-      // En el caso que sea falso nos muestra el mensaje de advertencia
-      $('#warning').addClass('show');
-      $('#warning').removeClass('hidden');
-      $('#info').removeClass('show');
-      $('#info').addClass('hidden');
-    }
-  });
+    $('#txt-name').addClass('text-uppercase');
+    $('#txt-last-name').addClass('text-uppercase');
+    console.log(validateName);
+    console.log(validateLastName);
+    console.log(validateEmail);
+    console.log(validateChecked);
+    
 
- 
-  $('#btn-resend').on('click', function() {
-    // Generamos el número aleatorio con las funciones Math.round y Math.random y la almacenamos en la variable numberRandom en el localstorage
-    window.localStorage.setItem('numberRandom', Math.round(Math.random() * 900) + 99);
-    // Enviamos el mensaje con el número generado
-    alert('LAB - ' + window.localStorage.getItem('numberRandom'));
-  });
+    if (validateEmail && validateLastName && validateName && validateChecked) {
+      window.location.href = 'validate.html';
+    }
+  }
+  );
+
 });

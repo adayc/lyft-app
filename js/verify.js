@@ -5,8 +5,9 @@ $(document).ready(function() {
   $('#lbl-phone').html(window.localStorage.getItem('codeCountry') + ' ' + window.localStorage.getItem('numberPhone'));
   // Ocultamos la alerta de código erróneo 
   $('#warning').addClass('hidden');
+  // Colocamos el cursor en la primera caja de texto
+  $('.input-group input').eq(0).focus();
   
-
   $('.input-group input').on('input', function() {
     // Elaboramos una expresión regular para validar que se ingrese el código 
     var REGEXONENUMBER = /^\d{1}$/;

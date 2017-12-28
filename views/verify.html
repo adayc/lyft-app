@@ -22,14 +22,14 @@
       <div class="container-fluid space-between align-items-center">
         <div class="row align-self-start">
           <div class="navbar-header">
-            <a class="navbar-brand" href="signup.html">
+            <a class="navbar-brand" href="register.html">
               <i class="glyphicon glyphicon-menu-left"></i>
             </a>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="navbar-text text-center">Sign up</h2>
+            <h2 class="navbar-text text-center">Verify phone number</h2>
           </div>
         </div>
         <div class="row">
@@ -44,43 +44,19 @@
       <div class="container">
         <div class="row">
           <div class="input-group col-xs-12 flex-center justify-center">
-            <div class="input-group-btn">
-              <button id="select-country" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Select
-                <span class="caret"></span>
-              </button>
-              <!-- Lista de paises con sus códigos-->
-              <ul id="country" class="dropdown-menu stretch">
-                <li>
-                  <a href="#" data-value="+51">
-                    <img src="../assets/icons/pe.png" alt="Icono de Perú">
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-value="+01">
-                    <img src="../assets/icons/us.png" alt="Icono de USA">
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-value="+52">
-                    <img src="../assets/icons/mx.jpg" alt="Icono de México">
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-value="+57">
-                    <img src="../assets/icons/co.png" alt="Icono de Colombia">
-                  </a>
-                </li>
-              </ul>
-            </div>
             <!-- Caja de texto en los que aparecera los códigos de países-->
-            <div class=" col-xs-offset-2 col-xs-3 col-sm-offset-1">
-              <input id="code-country" class="form-control text-center" type="text" placeholder="xx" readonly>
+            <div class="col-xs-2 col-sm-offset-1">
+              <h4 class="text-uppercase">lab-</h4>
             </div>
-            <i class="glyphicon glyphicon-minus"></i>
-            <!-- Caja de texto para ingresar el número de teléfono-->
-            <div class="col-xs-5">
-              <input id="txt-phone" type="text" class="form-control text-center" placeholder="123456789" aria-label="...">
+            <!-- Grupo de cajas de texto para ingresar el código enviado-->
+            <div class="col-xs-3">
+              <input type="text" class="form-control text-center" placeholder="X" aria-label="...">
+            </div>
+            <div class="col-xs-3">
+                <input type="text" class="form-control text-center" placeholder="X" aria-label="...">
+            </div>
+            <div class="col-xs-3">
+                <input type="text" class="form-control text-center" placeholder="X" aria-label="...">
             </div>
           </div>
         </div>
@@ -89,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="text-center">
-            <h6>We'll send a text to verify your phone</h6>
+            <h6></h6>
           </div>
         </div>
       </div>
@@ -99,7 +75,7 @@
           <div class="col-xs-12  text-center">
             <div id="info" class="alert alert-info alert-dismissible">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-              <strong>Info!</strong> Debe ingresar un número de 9 digitos.
+              <strong>Info!</strong> Enter the code sent to <strong>+51 993622459</strong>
             </div>
           </div>
         </div>
@@ -108,7 +84,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12  text-center">
-            <button id="btn-number" type="button" class="btn btn-default btn-lg btn-block text-uppercase bg-purple">next</button>
+            <button id="btn-number" type="button" class="btn btn-default btn-lg btn-block bg-purple">Resend code</button>
           </div>
         </div>
       </div>
@@ -118,6 +94,6 @@
     <!-- Js de bootstrap-->
     <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
     <!-- Js para la página-->
-    <script type="text/javascript" src="../js/register.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
   </body>
 </html>

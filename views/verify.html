@@ -50,18 +50,17 @@
             </div>
             <!-- Grupo de cajas de texto para ingresar el código enviado-->
             <div class="col-xs-3">
-              <input type="text" class="form-control text-center" placeholder="X" aria-label="...">
+              <input type="text" class="form-control text-center" placeholder="1" aria-label="...">
             </div>
             <div class="col-xs-3">
-                <input type="text" class="form-control text-center" placeholder="X" aria-label="...">
+                <input type="text" class="form-control text-center" placeholder="2" aria-label="...">
             </div>
             <div class="col-xs-3">
-                <input type="text" class="form-control text-center" placeholder="X" aria-label="...">
+                <input type="text" class="form-control text-center" placeholder="3" aria-label="...">
             </div>
           </div>
         </div>
       </div>
-      <!-- Indicación para enviar el código-->
       <div class="container">
         <div class="row">
           <div class="text-center">
@@ -69,25 +68,51 @@
           </div>
         </div>
       </div>
-      <!-- Info acerca del número telefonico -->
+      <!-- Indicación para enviar el código-->
       <div class="container">
         <div class="row">
           <div class="col-xs-12  text-center">
             <div id="info" class="alert alert-info alert-dismissible">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-              <strong>Info!</strong> Enter the code sent to <strong>+51 993622459</strong>
+              <strong>Info!</strong> Enter the code sent to <strong id="lbl-phone">+51 993622459</strong>
             </div>
           </div>
         </div>
       </div>
-      <!-- Botón NEXT-->
+      <!-- Advertencia de código  erróneo-->
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12  text-center">
+              <div id="warning" class="alert alert-warning alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Warning!</strong> El dato ingresado es incorrecto.
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Botón Resend code-->
       <div class="container">
         <div class="row">
           <div class="col-xs-12  text-center">
-            <button id="btn-number" type="button" class="btn btn-default btn-lg btn-block bg-purple">Resend code</button>
+            <button id="btn-resend" type="button" class="btn btn-default">Resend code</button>
           </div>
         </div>
       </div>
+      <div class="container">
+          <div class="row">
+            <div class="text-center">
+              <h6></h6>
+            </div>
+          </div>
+        </div>
+      <!-- Botón Resend code-->
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12  text-center">
+              <button id="btn-next" type="button" class="btn btn-default btn-lg btn-block text-uppercase bg-purple">next</button>
+            </div>
+          </div>
+        </div>
     </main>
     <!-- Js de Jquery-->
     <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>

@@ -1,10 +1,7 @@
 $(document).ready(function() {
   // Deshabilitamos el boton al cargar la página
   $('#btn-next').prop('disabled', true);
-  // Mostramos el número al que se envio el código
-  $('#lbl-phone').html(window.localStorage.getItem('codeCountry') + ' ' + window.localStorage.getItem('numberPhone'));
-  // Ocultamos la alerta de código erróneo 
-  $('#warning').addClass('hidden');
+ 
   
 
   $('.input-group input').on('input', function() {

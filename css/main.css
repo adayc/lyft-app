@@ -31,7 +31,6 @@
 
 
 
-
 .align-items-center{
   align-items:center;
 }
@@ -85,8 +84,20 @@ justify-content:space-between;
   justify-content:space-around;
 
 }
+/*Estilos de register-email*/
+.blue{
+  color:#72a3cc;
+  font-weight:bold;
+}
 
+.blue:hover{
+  color:#72a3cc;
+}
 
+.outline{
+  outline: transparent;
+  border:0;
+}
 
 
 @media screen and (min-width: 768px) {

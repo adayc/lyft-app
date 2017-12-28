@@ -7,6 +7,13 @@
  
 }
 
+.help{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+
 /*Clases reutilizables*/
 .flex-center{
   display:flex;

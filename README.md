@@ -9,13 +9,6 @@ La propuesta está estructurada con un diseño de grillas de 12 columnas en CSS 
 Estas son las vistas que posee el app.
 ![Imagenes](assets/images/d1.JPG)
 ![Imagenes](assets/images/d2.JPG)
-![Imagenes](assets/images/d3.JPG)
-![Imagenes](assets/images/d4.JPG)
-![Imagenes](assets/images/d5.JPG)
-![Imagenes](assets/images/d6.JPG)
-![Imagenes](assets/images/d7.JPG)
-
-## Vistas mobile
 
 
 ## Partes del website
@@ -31,7 +24,7 @@ Estas son las vistas que posee el app.
 
 ##6 Un footer con un menú de navegación el cual aumenta  en los dispositivos con resolución mayor a 768 px.
 
-## Ventanas modales
+
 
 ## Detalles adicionales
 -Para esta aplicación se empleó : Framework Bootstrap HTML5, CSS3 y Javascript.

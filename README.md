@@ -5,13 +5,13 @@ _____________
 El siguiente proyecto es el desarrollo de una web-app, en el cual los usuarios cumplen los pasos necesarios para que  puedan registrarse. empleando el framework Bootstrap
 
 La propuesta está estructurada con un diseño de grillas de 12 columnas en CSS para que se encuentre bajo los lineamientos del responsive design y sea adapatable a cada dispositivo en que se realice.
-## Vistas desktop
+## Vistas del website
 Estas son las vistas que posee el app.
 ![Imagenes](assets/images/d1.JPG)
 ![Imagenes](assets/images/d2.JPG)
 
 
-## Vistas del website
+## Descripción de las vistas
 * Vista splash con una duración de 5 segundos.
 * Vista sign up en la cual se tendrá la opción de elegir el botón "Sign up" para registrarse.
 * Vista register en la cual se elige el país de procedencia para registrarse, al pulsar el botón "Next" generará un código aleatorio de registro.

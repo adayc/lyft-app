@@ -1,12 +1,12 @@
-# Proyecto:Labcar
+# Proyecto:Lyft
 _____________
 
 ## Descripción del proyecto
-El siguiente proyecto es la maquetación de la página web de LabCar empleando el framework Bootstrap
+El siguiente proyecto es el desarrollo de una web-app, en el cual los usuarios cumplen los pasos necesarios para que  puedan registrarse. empleando el framework Bootstrap
 
 La propuesta está estructurada con un diseño de grillas de 12 columnas en CSS para que se encuentre bajo los lineamientos del responsive design y sea adapatable a cada dispositivo en que se realice.
 ## Vistas desktop
-Estas son las vistas para dispositivos con resoluciones mayores o iguales a 768px.
+Estas son las vistas que posee el app.
 ![Imagenes](assets/images/d1.JPG)
 ![Imagenes](assets/images/d2.JPG)
 ![Imagenes](assets/images/d3.JPG)
@@ -16,9 +16,7 @@ Estas son las vistas para dispositivos con resoluciones mayores o iguales a 768p
 ![Imagenes](assets/images/d7.JPG)
 
 ## Vistas mobile
-Estas son las vistas para dispositivos con resoluciones menores a 768px.
-![Imagenes](assets/images/m1.JPG)
-![Imagenes](assets/images/m2.JPG)
+
 
 ## Partes del website
 ##1 Un header con un navbar que se convierte en un menú desplegable en dispositivos móviles.
@@ -34,10 +32,6 @@ Estas son las vistas para dispositivos con resoluciones menores a 768px.
 ##6 Un footer con un menú de navegación el cual aumenta  en los dispositivos con resolución mayor a 768 px.
 
 ## Ventanas modales
-
-###1 Formulario de Login.
-###2 Formulario de regisro.
-###3 Formulario de conviertete en conductor.
 
 ## Detalles adicionales
 -Para esta aplicación se empleó : Framework Bootstrap HTML5, CSS3 y Javascript.

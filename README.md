@@ -11,23 +11,22 @@ Estas son las vistas que posee el app.
 ![Imagenes](assets/images/d2.JPG)
 
 
-## Partes del website
-##1 Un header con un navbar que se convierte en un menú desplegable en dispositivos móviles.
+## Vistas del website
+* Vista splash con una duración de 5 segundos.
+* Vista sign up en la cual se tendrá la opción de elegir el botón "Sign up" para registrarse.
+* Vista register en la cual se elige el país de procedencia para registrarse, al pulsar el botón "Next" generará un código aleatorio de registro.
+* Vista verify en la cual se ingresa el código enviado.
+* Vista register-email, luego de colocar el número aleatorio se visualiza esta vista, en la que se registra el nombre y email.
+* Vista validate, en el caso que sea exitoso el registro se visualizará esta vista.
 
-##2 Una primera sección  con la imagen principal. El contenido varía de acuerdo a los dispositivos. En mobile solo hay un botón de "Descargar la app", en dispositivos mayores a resolución 778 , tenemos el botón de "Registro" y el de "Convertirse en conductor"
 
-##3 Una sección descriptiva acerca la nueva aplicación.
 
-##4 Una sección con un botón invitando a  "Convertirse en conductor"
 
-##5 Una sección sobre como calcular la ruta y las tarifas con una imagen de Google Maps que genera la ruta de inicio a fin.
-
-##6 Un footer con un menú de navegación el cual aumenta  en los dispositivos con resolución mayor a 768 px.
 
 
 
 ## Detalles adicionales
--Para esta aplicación se empleó : Framework Bootstrap HTML5, CSS3 y Javascript.
+-Para esta aplicación se empleó : Framework Bootstrap HTML5, CSS3 y JQuery.
 
   
   Cualquier consulta, duda o sugerencia puede realizarla al correo: adayc@hotmail.com
